@@ -4,6 +4,9 @@ Here I created animated list demo which look amazing with animation.
 
 ## Getting Started
 
+![animated_list_video](https://github.com/oneflutter/animated_list_demo_app/assets/155045845/5196e061-b598-4b5a-8f82-aed37c0db7f7)
+<img src="https://github.com/oneflutter/animated_list_demo_app/assets/155045845/f1e741aa-6a06-4d75-83ef-d6ab353cf331" alt="device-2024-03-07-165746" height="742" width="380">
+
 
 ## Getting Started With new Project
 
