@@ -19,7 +19,7 @@ class _ExpansionListTileDemoScreenState extends State<ExpansionListTileDemoScree
 
     _animationController = AnimationController(
       vsync: this,
-      duration: Duration(milliseconds: 500),
+      duration: const Duration(milliseconds: 500),
     );
 
     _slideAnimation = Tween<double>(begin: 1, end: 0).animate(
