@@ -1,4 +1,6 @@
-import 'package:animated_list_demo_app/animated_list_demo_using_expansion_listtile.dart';
+/// Animated List in flutter using (set state(){})
+/*
+import 'package:animated_list_demo_app/model/data_modal.dart';
 import 'package:flutter/material.dart';
 
 class ListScreen extends StatefulWidget {
@@ -14,50 +16,27 @@ class _ListScreenState extends State<ListScreen> {
 
   bool startAnimation = false;
 
-  List<String> texts = [
-    "ShoppingBag",
-    "Analytics",
-    "FlagMarker",
-    "NotificationBell",
-    "PiggyBank",
-    "DataCloud",
-    "MoonLight",
-    "TaskChecklist",
-    "MapLocation",
-    "GearSettings",
-    "SpaceRocket",
-    "BackpackTravel",
-    "UserAvatar",
-    "TaskComplete",
-    "SearchMagnifier",
-    "PluginModule",
-    "BluetoothSignal",
-    "HeartFavorite",
-    "LockedPadlock",
-    "BookmarkRibbon",
-  ];
-
-  List<IconData> icons = [
-    Icons.shopping_bag,
-    Icons.analytics,
-    Icons.flag,
-    Icons.notifications,
-    Icons.account_balance,
-    Icons.cloud,
-    Icons.nightlight_round,
-    Icons.assignment_turned_in,
-    Icons.location_on,
-    Icons.settings,
-    Icons.rocket,
-    Icons.backpack,
-    Icons.person,
-    Icons.done_all,
-    Icons.search,
-    Icons.extension,
-    Icons.bluetooth,
-    Icons.favorite,
-    Icons.lock,
-    Icons.bookmark,
+  List<DataModel> listData = [
+    DataModel(text: "ShoppingBag", icon: Icons.shopping_bag),
+    DataModel(text: "Analytics", icon: Icons.analytics),
+    DataModel(text: "FlagMarker", icon: Icons.flag),
+    DataModel(text: "NotificationBell", icon: Icons.notifications),
+    DataModel(text: "PiggyBank", icon: Icons.account_balance),
+    DataModel(text: "DataCloud", icon: Icons.cloud),
+    DataModel(text: "MoonLight", icon: Icons.nightlight_round),
+    DataModel(text: "TaskChecklist", icon: Icons.assignment_turned_in),
+    DataModel(text: "MapLocation", icon: Icons.location_on),
+    DataModel(text: "GearSettings", icon: Icons.settings),
+    DataModel(text: "SpaceRocket", icon: Icons.rocket),
+    DataModel(text: "BackpackTravel", icon: Icons.backpack),
+    DataModel(text: "UserAvatar", icon: Icons.person),
+    DataModel(text: "TaskComplete", icon: Icons.done_all),
+    DataModel(text: "SearchMagnifier", icon: Icons.search),
+    DataModel(text: "PluginModule", icon: Icons.extension),
+    DataModel(text: "BluetoothSignal", icon: Icons.bluetooth),
+    DataModel(text: "HeartFavorite", icon: Icons.favorite),
+    DataModel(text: "LockedPadlock", icon: Icons.lock),
+    DataModel(text: "BookmarkRibbon", icon: Icons.bookmark),
   ];
 
   @override
@@ -86,19 +65,6 @@ class _ListScreenState extends State<ListScreen> {
           ),
         ),
         automaticallyImplyLeading: true,
-        actions: [
-          IconButton(
-            onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => const ExpansionListTileDemoScreen(),
-                ),
-              );
-            },
-            icon: const Icon(Icons.arrow_forward_ios),
-          ),
-        ],
       ),
       // backgroundColor: const Color(0xFF222431),
       body: SingleChildScrollView(
@@ -116,8 +82,6 @@ class _ListScreenState extends State<ListScreen> {
                 // setState(() {
                 //   startAnimation = true;
                 // });
-                
-                
               },
               child: const Text(
                 "Tap For ANIMATION",
@@ -134,7 +98,7 @@ class _ListScreenState extends State<ListScreen> {
               child: ListView.builder(
                 primary: false,
                 shrinkWrap: true,
-                itemCount: texts.length,
+                itemCount: listData.length,
                 itemBuilder: (context, index) {
                   return item(index);
                 },
@@ -170,17 +134,18 @@ class _ListScreenState extends State<ListScreen> {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Text(
-            "${index + 1}. ${texts[index]}",
+            "${index + 1}. ${listData[index].text}",
             style: const TextStyle(
               fontSize: 16,
               fontWeight: FontWeight.w500,
             ),
           ),
           Icon(
-            icons[index],
+            listData[index].icon,
           ),
         ],
       ),
     );
   }
 }
+*/

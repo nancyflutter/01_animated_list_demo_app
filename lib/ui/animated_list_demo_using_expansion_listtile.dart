@@ -7,8 +7,7 @@ class ExpansionListTileDemoScreen extends StatefulWidget {
   State<ExpansionListTileDemoScreen> createState() => _ExpansionListTileDemoScreenState();
 }
 
-class _ExpansionListTileDemoScreenState extends State<ExpansionListTileDemoScreen>
-    with SingleTickerProviderStateMixin {
+class _ExpansionListTileDemoScreenState extends State<ExpansionListTileDemoScreen> with SingleTickerProviderStateMixin {
   late List<bool> isExpandedList;
   late AnimationController _animationController;
   late Animation<double> _slideAnimation;
@@ -35,7 +34,9 @@ class _ExpansionListTileDemoScreenState extends State<ExpansionListTileDemoScree
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.deepPurple.shade200,
-      appBar: AppBar(),
+      appBar: AppBar(
+        title: const Text("Expansion ListTile Demo"),
+      ),
       body: AnimatedBuilder(
         animation: _slideAnimation,
         builder: (context, child) {
@@ -58,8 +59,8 @@ class _ExpansionListTileDemoScreenState extends State<ExpansionListTileDemoScree
                 child: ExpansionTile(
                   backgroundColor: Colors.white,
                   collapsedBackgroundColor: Colors.white,
-                  title: Padding(
-                    padding: const EdgeInsets.all(8.0),
+                  title: const Padding(
+                    padding: EdgeInsets.all(8.0),
                     child: Text("Tips for Beginners"),
                   ),
                   initiallyExpanded: isExpandedList[index],
